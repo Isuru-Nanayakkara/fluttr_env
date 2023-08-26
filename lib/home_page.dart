@@ -1,3 +1,4 @@
+import 'package:flttr_env/environment_values.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,8 +11,8 @@ class HomePage extends StatelessWidget {
         title: const Text('Flutter Environments'),
         backgroundColor: Colors.teal,
       ),
-      body: const Center(
-        child: Text('This is a label'),
+      body: Center(
+        child: Text(EnvironmentValues.apiBaseURL),
       ),
     );
   }
